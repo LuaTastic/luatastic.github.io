@@ -1,2 +1,2 @@
 # luatastic.github.io
-test website
+**LuaTastic's website. Currently in development.**
