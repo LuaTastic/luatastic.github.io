@@ -1,3 +1,9 @@
+
+@font-face {
+    font-family: "VCROSDMONO";
+    src: url(fonts/VCR_OSD_MONO.ttf);
+}
+
 body{background-color: #2c2c2c;}
          
          
@@ -18,21 +24,33 @@ body{background-color: #2c2c2c;}
    color: #ffffff;
    font-size: 75px;
    text-shadow: 2px 2px 0px #080808;
-   font-family: 'Courier New', Courier, monospace;
+   font-family: VCROSDMONO;
+   animation: wavy-text 2000ms ease-in-out infinite;
 }
 .headertextframe {
    text-align: center;
    color: #ffffff;
    font-size: 70px;
    text-shadow: 2px 2px 0px #080808;
-   font-family: 'Courier New', Courier, monospace;
+   font-family: VCROSDMONO;
 }
 
 .yesitsme {
-   font-family: 'Courier New', Courier, monospace;
+   font-family: VCROSDMONO;
    font-size: 30px;
-   font-weight:lighter;
    text-align: center;
    color: #ffffff;
    margin-top: 80px;
+}
+
+@keyframes wavy-text {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
