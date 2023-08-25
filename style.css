@@ -4,7 +4,10 @@
     src: url(fonts/VCR_OSD_MONO.ttf);
 }
 
-body{background-color: #2c2c2c;}
+body{
+    background: rgb(47,47,47);
+    background: linear-gradient(90deg, rgba(47,47,47,1) 0%, rgba(57,57,57,1) 50%, rgba(48,48,48,1) 100%);
+}
          
          
 .lutasticlogo {
