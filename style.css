@@ -8,7 +8,7 @@ body{background-color: #2c2c2c;}
          
          
 .lutasticlogo {
-   width: 100;
+   width: 300px;
    height: auto
 }
 
@@ -41,6 +41,20 @@ body{background-color: #2c2c2c;}
    text-align: center;
    color: #ffffff;
    margin-top: 80px;
+}
+.gitbutton {
+    width: 60px;
+    height: auto;
+    position: absolute;
+    top: 5px;
+    right: 25px;
+}
+.robloxbutton {
+    width: 60px;
+    height: auto;
+    position: absolute;
+    top: 5px;
+    right: 100px;
 }
 
 @keyframes wavy-text {
