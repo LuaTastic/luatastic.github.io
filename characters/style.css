@@ -1,0 +1,56 @@
+
+@font-face {
+    font-family: "VCROSDMONO";
+    src: url(../fonts/VCR_OSD_MONO.ttf);
+}
+
+body{
+    background: rgb(47,47,47);
+    background: linear-gradient(90deg, rgba(47,47,47,1) 0%, rgba(57,57,57,1) 50%, rgba(48,48,48,1) 100%);
+}
+         
+         
+.lutasticlogo {
+   width: 300px;
+   height: auto
+}
+
+
+.questionmarks {
+   text-align: center;
+   color: #ffffff;
+   font-size: 75px;
+   text-shadow: 2px 2px 0px #080808;
+   font-family: VCROSDMONO;
+   animation: wavy-text 5000ms ease-in-out infinite;
+}
+
+.projectbutton {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.projectdiv {
+    text-align: left;
+    display: inline-block;
+
+}
+
+.splitline {
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+}
+
+@keyframes wavy-text {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
