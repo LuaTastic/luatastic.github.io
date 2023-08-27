@@ -42,10 +42,20 @@ body{
 }
 
 .photo_left {
-    max-width: 300px;
+    max-width: 600px;
     height: auto;
     border-radius: 10px;
     float: left;
+}
+
+
+.unfinished_warning{
+    border-style: solid;
+    max-width: 900px;
+    max-height: auto;
+    background-color: #915924;
+    border-color: #ffe600;
+    font-size: 45px;
 }
 
 @keyframes wavy-text {

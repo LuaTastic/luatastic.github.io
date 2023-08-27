@@ -42,7 +42,7 @@ body{
 }
 
 .photo_left {
-    max-width: 300px;
+    max-width: 600px;
     height: auto;
     border-radius: 10px;
     float: left;
