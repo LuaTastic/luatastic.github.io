@@ -38,7 +38,7 @@ body{
 .headertextframe {
    text-align: center;
    color: #ffffff;
-   font-size: 300%;
+   font-size: 75px;
    text-shadow: 2px 2px 0px #080808;
    font-family: VCROSDMONO;
    width: auto;
@@ -104,7 +104,16 @@ body{
 .projectdiv {
     text-align: left;
     display: inline-block;
-
+    justify-items: left;
+}
+.bottompageinformation {
+    text-align: center;
+    color: #6b6b6b;
+    font-size: 30px;
+    font-family: VCROSDMONO;
+    font-weight: lighter;
+    max-width: auto;
+    max-height: 100px;
 }
 
 

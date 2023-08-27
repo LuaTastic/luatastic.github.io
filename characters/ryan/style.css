@@ -1,0 +1,74 @@
+
+@font-face {
+    font-family: "VCROSDMONO";
+    src: url(../../fonts/VCR_OSD_MONO.ttf);
+}
+
+body{
+    scroll-behavior: smooth;
+    background-image: url(../../images/background.png);
+    background-repeat: repeat;
+    background-size: 70px;
+}
+         
+         
+.lutasticlogo {
+   width: 300px;
+   height: auto
+}
+
+
+.questionmarks {
+   text-align: center;
+   color: #ffffff;
+   font-size: 75px;
+   text-shadow: 2px 2px 0px #080808;
+   font-family: VCROSDMONO;
+   animation: wavy-text 5000ms ease-in-out infinite;
+}
+
+.wikidescription {
+    text-align: left;
+    color: #ffffff;
+    font-size: 60px;
+    font-family: VCROSDMONO;
+    overflow: hidden;
+ }
+
+.splitline {
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+}
+
+.photo_left {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    float: left;
+}
+.yellow_warningframe {
+    text-align: center;
+    color: #ffffff;
+    font-size: 40px;
+    font-family: VCROSDMONO;
+    background-color: #8f503d;
+    border-color: #fffb00;
+    border-width: 3px;
+    border-style: solid;
+    max-width: 900px;
+    margin-left: 350px;
+    
+}
+
+@keyframes wavy-text {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
