@@ -72,7 +72,7 @@ body{
 .splitline {
     width: 100%;
     height: 1px;
-    background-color: #ffffff;
+    background-color: #9c9c9c;
 }
 
 .projectbutton {
@@ -114,6 +114,23 @@ body{
     font-weight: lighter;
     max-width: auto;
     max-height: 100px;
+}
+
+.gif_cont {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.gif {
+    max-width: 1200px;
+    min-width: 900px;
+    max-height: auto;
+    border-style:dashed;
+    border-radius: 20px;
+    border-color: #252525;
+    border-width: 3px;
+
+
 }
 
 

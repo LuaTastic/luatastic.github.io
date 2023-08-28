@@ -33,8 +33,8 @@ body{
 }
 
 .group_icon {
-    max-width: 800;
-    max-height: 800;
+    max-width: 256 ;
+    max-height: 256 ;
     border-radius: 10px;
     border-color: #202020;
     border-style: solid;
@@ -42,28 +42,20 @@ body{
     animation-fill-mode: forwards;
 }
 
-.group_icon_spoiler {
-    max-width: 800;
-    max-height: 800;
+.group_icon_noway {
+    max-width: 256 ;
+    max-height: 256 ;
     border-radius: 10px;
-    border-color: #202020;
+    border-color: #000000;
     border-style: solid;
-    animation: back-to-black 100ms ease-out;
-    animation-fill-mode: forwards;
-    filter: blur(10px)
+    cursor:not-allowed;
+    opacity: 0.5;
 }
 
 .group_icon:hover {
     animation: white-border 100ms ease-out;
     animation-fill-mode: forwards;
 }
-
-.group_icon_spoiler:hover {
-    animation: white-border 100ms ease-out;
-    animation-fill-mode: forwards;
-    filter: blur(0px)
-}
-
 
 @keyframes white-border {
     0% {
