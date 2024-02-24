@@ -6,10 +6,17 @@
 
 body{
         scroll-behavior: smooth;
+        background-color: #3a3a3a;
+
+        width: 70%;
+        margin-left: 15%;
+        height: 100%;
+
         background-image: url(images/background.png);
         background-repeat: repeat;
         background-size: 70px;
 }
+
          
          
 .lutasticlogo {
@@ -21,7 +28,7 @@ body{
    background-color: transparent;
    cursor:pointer;
    border: none;
-   display: inline-block;
+   display: block;
    height: 80px;
    width: auto;
 }
@@ -45,14 +52,6 @@ body{
    height: auto;
    overflow: hidden;
 }
-
-.gitbutton {
-    height: 60px;
-    width: auto;
-    position: absolute;
-    top: 13px;
-    right: 100px;
-}
 .robloxbutton {
     height: 60px;
     width: auto;
@@ -67,6 +66,9 @@ body{
     height: 350px; 
     float:left;
     border-radius: 10px;
+    border-radius: 10px;
+border-color: #202020;
+border-style: solid;
 }
 
 .splitline {
@@ -76,35 +78,36 @@ body{
 }
 
 .projectbutton {
-    max-width: 600;
-    height: auto;
+    max-width: 550px !important;
+    max-height: auto;
     border-radius: 10px;
     border-color: #202020;
     border-style: solid;
-    animation: back-to-black 100ms ease-out;
-    animation-fill-mode: forwards;
+    transition: 500ms;
+    margin-left: 30px;
 }
 .projectbutton:hover {
-    animation: white-border 100ms ease-out;
-    animation-fill-mode: forwards;
+    border-color: #ffffff;
+    transform:scale(1.25);
+    z-index: 2;
 }
 .projectbutton_square {
-    max-width: 400;
-    height: auto;
+    max-width: 268px;
+    max-height: 268px;
     border-radius: 10px;
     border-color: #202020;
     border-style: solid;
-    animation: back-to-black 100ms ease-out;
-    animation-fill-mode: forwards;
+    transition: 500ms;
 }
 .projectbutton_square:hover {
-    animation: white-border 100ms ease-out;
-    animation-fill-mode: forwards;
+    border-color: #ffffff;
+    transform:scale(1.25);
+    z-index: 2;
 }
 .projectdiv {
-    text-align: left;
-    display: inline-block;
-    justify-items: left;
+    text-align: center;
+    display: block;
+    justify-content: center;
 }
 .bottompageinformation {
     text-align: center;
@@ -129,8 +132,6 @@ body{
     border-radius: 20px;
     border-color: #252525;
     border-width: 3px;
-
-
 }
 
 
@@ -146,20 +147,141 @@ body{
     }
 }
 
-@keyframes white-border {
+@keyframes rainbow-text {
     0% {
-        border-color: #202020;
+        color: red;
+    }
+    15% {
+        color: orange;
+    }
+    30% {
+        color: yellow;
+    }
+    45% {
+        color: green;
+    }
+    60% {
+        color: blue;
+    }
+    75% {
+        color: purple;
     }
     100% {
-        border-color: #ffffff;
+        color: red;
     }
 }
 
-@keyframes back-to-black {
-    0% {
-        border-color: #ffffff;
-    }
-    100% {
-        border-color: #202020;
-    }
+.group_icon {
+max-width: 512px;
+height: auto;
+border-radius: 10px;
+border-color: #202020;
+border-style: solid;
+transition: 500ms;
+}
+
+
+.group_icon:hover {
+    border-color: #ffffff;
+    transform:scale(1.25);
+    z-index: 2;
+}
+
+.unfinished_warning{
+    border-style: solid;
+    max-width: 900px;
+    max-height: auto;
+    background-color: #915924;
+    border-color: #ffe600;
+    font-size: 45px;
+}
+.photo_left {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    float: left;
+    border-color: #202020;
+    border-style: solid;
+}
+.wikidescription {
+    text-align: left;
+    color: #ffffff;
+    font-size: 60px;
+    font-family: VCROSDMONO;
+    overflow: hidden;
+ }
+
+ .rainbowtext {
+    text-align: center;
+    color: #ffffff;
+    font-size: 75px;
+    text-shadow: 2px 2px 0px #080808;
+    font-family: VCROSDMONO;
+    animation: rainbow-text 10s ease-in-out infinite;
+}
+ 
+.infobar_top {
+background-color: #1d1d1d;
+z-index: 3;
+position: fixed;
+top: 0;
+left: 0;
+font-family: VCROSDMONO;
+width: 100%;
+max-height: auto;
+text-align: center;
+color: #ffffff;
+font-size: 40px;
+overflow:hidden;
+display: none;
+}
+
+.characterbutton {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    border-color: #202020;
+    border-style: solid;
+    transition: 500ms;
+    margin-left: 30px;
+}
+
+.characterbutton:hover {
+    border-color: #ffffff;
+    transform:scale(1.25);
+    z-index: 2;
+}
+
+.gallery_pictures {
+max-width: 768px;
+height: auto;
+text-align: center;
+margin:0 auto;
+display:flex;
+overflow-x: scroll;
+overflow-y: hidden;
+scroll-behavior: smooth;
+position: relative;
+}
+
+.yellow_warningframe {
+    text-align: center;
+    color: #ffffff;
+    font-size: 40px;
+    font-family: VCROSDMONO;
+    background-color: #8f503d;
+    border-color: #fffb00;
+    border-width: 3px;
+    border-style: solid;
+    max-width: 900px;
+    margin-left: 350px;
+    
+}
+
+.gallery_pictures::-webkit-scrollbar {
+    display: none;
+}
+
+.news_image {
+    max-width: 800px;
 }
