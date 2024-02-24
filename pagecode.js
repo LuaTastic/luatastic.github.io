@@ -40,7 +40,10 @@ function init() {
         infobar.style.display = "block"
     }
 
-    
+
+            infobar.textContent = "The website is temporarily experiencing technical difficulties. Expect some pages to look weird!"
+        infobar.style.backgroundColor = "#FFA500"
+        infobar.style.display = "block"
 
 }
 
