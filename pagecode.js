@@ -39,12 +39,6 @@ function init() {
         infobar.style.backgroundColor = "#0E0E0E"
         infobar.style.display = "block"
     }
-
-
-            infobar.textContent = "The website is temporarily experiencing technical difficulties. Expect some pages to look weird!"
-        infobar.style.backgroundColor = "#FFA500"
-        infobar.style.display = "block"
-
 }
 
 document.onload = init();
